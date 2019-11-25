@@ -12,10 +12,9 @@
     >
 
     <TextView
-        android:layout_gravity=""
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:text="Bem vindo ao MobQuiz"
+        android:text="Crie sua conta"
         android:textSize="40dp"
         android:textAlignment="center"
         android:layout_marginBottom="20dp"
@@ -23,18 +22,30 @@
         />
 
     <EditText
+        android:id="@+id/edt_email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:hint="Digite seu nome"
+        android:hint="Digite seu e-mail"
         android:background="@android:color/white"
         android:paddingLeft="10dp"
-        android:layout_marginBottom="10dp"
-    />
+        android:layout_marginBottom="15dp"
+        />
 
     <EditText
+        android:id="@+id/edt_senha"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:hint="Digite sua senha"
+        android:background="@android:color/white"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_conf_senha"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Confirme sua senha"
         android:background="@android:color/white"
         android:paddingLeft="10dp"
         android:layout_marginBottom="20dp"
@@ -43,20 +54,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Entrar"
+        android:text="Cadastrar"
         android:textColor="@android:color/white"
         android:background="@android:color/black"
         android:layout_marginBottom="10dp"
-    />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Não possui cadastro?"
-        android:textColor="@android:color/black"
-        android:background="@android:color/holo_blue_bright"
-        android:layout_marginBottom="10dp"
-        android:onClick="cadastro"
+        android:onClick="cadastrar"
         />
 
 </LinearLayout>
